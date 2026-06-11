@@ -8,13 +8,13 @@ function Navbar() {
 
         {/* Logo */}
 
-        <div className="flex items-center gap-3">
+       <div className="flex items-center gap-2 md:gap-3">
 
           <img
-            src={logo}
-            alt="Unicure"
-            className="h-12"
-          />
+  src={logo}
+  alt="Unicure"
+  className="h-10 md:h-12"
+/>
 
           <div>
             <h1 className="text-xl font-bold text-red-700">
@@ -61,14 +61,21 @@ function Navbar() {
   className="
   bg-red-600
   hover:bg-red-700
-  px-6
-  py-3
+
+  px-3 md:px-6
+  py-2 md:py-3
+
+  text-sm md:text-base
+
   rounded-xl
   text-white
   font-semibold
+
   shadow-lg
   transition
   hover:scale-105
+
+  whitespace-nowrap
   "
 >
   Request Partnership
