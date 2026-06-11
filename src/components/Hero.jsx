@@ -33,7 +33,16 @@ function Hero() {
             >
               <div className="w-20 h-1 bg-red-600 rounded-full mb-6"></div>
 
-              <span className="bg-red-100 text-red-700 px-5 py-2 rounded-full font-semibold">
+              <span className="
+bg-red-100
+text-red-700
+px-3 sm:px-5
+py-2
+rounded-full
+font-semibold
+text-sm
+sm:text-base
+">
                 Since 1984 • Trusted Pharmaceutical Partner
               </span>
             </motion.div>
@@ -42,7 +51,14 @@ function Hero() {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="mt-8 text-6xl lg:text-7xl font-extrabold leading-tight"
+              className="
+mt-8
+text-4xl
+sm:text-5xl
+lg:text-7xl
+font-extrabold
+leading-tight
+"
             >
               Pursuing Excellence
 
@@ -55,7 +71,15 @@ function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
-              className="mt-8 text-xl text-gray-600 leading-relaxed max-w-2xl"
+              className="
+mt-8
+text-base
+sm:text-lg
+lg:text-xl
+text-gray-600
+leading-relaxed
+max-w-2xl
+"
             >
               Unicure India Pvt. Ltd. is a leading pharmaceutical
               manufacturing company delivering innovative,
