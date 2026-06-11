@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.pulse-marker {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.clip-top-left {
+  clip-path: inset(0 50% 50% 0);
+}
+
+.clip-top-right {
+  clip-path: inset(0 0 50% 50%);
+}
+
+.clip-bottom-left {
+  clip-path: inset(50% 50% 0 0);
+}
+
+.clip-bottom-right {
+  clip-path: inset(50% 0 0 50%);
+}
