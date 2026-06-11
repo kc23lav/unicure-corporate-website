@@ -38,3 +38,13 @@ html {
 .clip-bottom-right {
   clip-path: inset(50% 0 0 50%);
 }
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
