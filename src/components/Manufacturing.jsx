@@ -274,8 +274,11 @@ md:h-[850px]
             -translate-x-1/2
             -translate-y-1/2
 
-            w-[340px]
-            h-[340px]
+           w-[250px]
+h-[250px]
+
+md:w-[340px]
+md:h-[340px]
 
             rounded-full
             bg-white
@@ -296,10 +299,19 @@ md:h-[850px]
             <img
               src={logo}
               alt="Unicure"
-              className="w-20 mb-3"
+              className="
+w-12
+md:w-20
+mb-3
+"
             />
 
-            <h3 className="text-4xl font-bold text-red-600">
+            <h3 className="
+text-2xl
+md:text-4xl
+font-bold
+text-red-600
+">
               UNICURE
             </h3>
 
@@ -311,7 +323,7 @@ md:h-[850px]
               Excellence
             </p>
 
-            <div className="mt-6 space-y-2">
+            <div className="mt-3 md:mt-6 space-y-1 md:space-y-2">
 
               <p className="font-semibold text-gray-800">
                 40+ Years Experience
