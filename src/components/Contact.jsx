@@ -171,11 +171,12 @@ duration-300
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             className="
-            bg-white
-            rounded-[40px]
-            shadow-xl
-            p-10
-            "
+bg-white
+rounded-[30px]
+shadow-xl
+p-6
+md:p-10
+"
           >
 
             <h3 className="text-4xl font-bold mb-8">
@@ -246,23 +247,25 @@ duration-300
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             className="
-            bg-gradient-to-br
-            from-red-700
-            to-red-900
-            text-white
-            rounded-[40px]
-            p-12
+bg-gradient-to-br
+from-red-700
+to-red-900
+text-white
+rounded-[30px]
+p-6
+md:p-12
+
             flex
             flex-col
             justify-center
             "
           >
 
-            <h3 className="text-5xl font-bold mb-6">
+           <h3 className="text-3xl md:text-5xl font-bold mb-6">
               Looking For Export Partnerships?
             </h3>
 
-            <p className="text-lg leading-relaxed text-red-100">
+            <p className="text-base md:text-lg leading-relaxed text-red-100">
               Our international business team is ready to assist
               distributors, wholesalers, healthcare organizations,
               and pharmaceutical companies worldwide.
