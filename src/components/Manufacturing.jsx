@@ -318,52 +318,102 @@ function Manufacturing() {
 
       </div>
 
-<div className="md:hidden space-y-6">
+<div className="md:hidden space-y-10">
 
   {processSteps.map((step, index) => (
 
-    <div
+    <motion.div
       key={index}
-      className="
-      bg-white
-      rounded-3xl
-      overflow-hidden
-      shadow-xl
-      "
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="relative"
     >
 
-      <img
-        src={step.image}
-        alt={step.title}
-        className="
-        w-full
-        h-48
-        object-cover
-        "
-      />
+      {/* Timeline Line */}
 
-      <div className="p-6">
+      {index !== processSteps.length - 1 && (
+        <div
+          className="
+          absolute
+          left-5
+          top-16
+          w-[2px]
+          h-full
+          bg-red-200
+          "
+        />
+      )}
 
-        <p className="text-red-600 font-bold">
+      <div className="flex gap-4">
+
+        {/* Number */}
+
+        <div
+          className="
+          min-w-[40px]
+          h-[40px]
+          rounded-full
+          bg-red-600
+          text-white
+          flex
+          items-center
+          justify-center
+          font-bold
+          z-10
+          "
+        >
           {step.number}
-        </p>
+        </div>
 
-        <h3 className="text-2xl font-bold mt-2">
-          {step.title}
-        </h3>
+        {/* Card */}
 
-        <p className="text-gray-600 mt-3">
-          {step.fullDescription}
-        </p>
+        <div
+          className="
+          bg-white
+          rounded-3xl
+          overflow-hidden
+          shadow-xl
+          border
+          border-red-100
+          flex-1
+          "
+        >
+
+          <img
+            src={step.image}
+            alt={step.title}
+            className="
+            w-full
+            h-48
+            object-cover
+            "
+          />
+
+          <div className="p-5">
+
+            <h3 className="text-2xl font-bold text-gray-900">
+              {step.title}
+            </h3>
+
+            <div className="w-14 h-1 bg-red-600 rounded-full my-3"></div>
+
+            <p className="text-gray-600 leading-relaxed">
+              {step.fullDescription}
+            </p>
+
+          </div>
+
+        </div>
 
       </div>
 
-    </div>
+    </motion.div>
 
   ))}
 
 </div>
-
     </div>
   </section>
 );
