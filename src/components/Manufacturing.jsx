@@ -66,7 +66,6 @@ const processSteps = [
 ];
 function Manufacturing() {
     const [selectedStep, setSelectedStep] = useState(null);
-    const isMobile = window.innerWidth < 768;
     return (
   <section
     id="manufacturing"
@@ -100,18 +99,9 @@ function Manufacturing() {
 
       {/* Orbit */}
 
-      <div className="flex justify-center">
+      <div className="hidden md:flex justify-center">
 
-        <div
-  className="
-  relative
-  w-[550px]
-h-[550px]
-
-md:w-[850px]
-md:h-[850px]
-  "
->
+        <div className="relative w-[850px] h-[850px]">
 
           {/* Orbit Ring */}
 
@@ -165,14 +155,9 @@ md:h-[850px]
                 }}
                 className="absolute"
                 style={{
-  left: `calc(50% + ${
-    isMobile ? step.x * 0.7 : step.x
-  }px - 90px)`,
-
-  top: `calc(50% + ${
-    isMobile ? step.y * 0.7 : step.y
-  }px - 120px)`,
-}}
+                  left: `calc(50% + ${step.x}px - 90px)`,
+                  top: `calc(50% + ${step.y}px - 120px)`,
+                }}
               >
                 {/* Connecting Line */}
 
@@ -197,7 +182,7 @@ md:h-[850px]
                     )
                   }
                   className="
-                  w-32 md:w-44
+                  w-44
                   bg-white
                   rounded-3xl
                   shadow-xl
@@ -257,6 +242,52 @@ md:h-[850px]
             ))}
           </motion.div>
 
+<div className="md:hidden space-y-6">
+
+  {processSteps.map((step, index) => (
+
+    <div
+      key={index}
+      className="
+      bg-white
+      rounded-3xl
+      overflow-hidden
+      shadow-xl
+      "
+    >
+
+      <img
+        src={step.image}
+        alt={step.title}
+        className="
+        w-full
+        h-48
+        object-cover
+        "
+      />
+
+      <div className="p-6">
+
+        <p className="text-red-600 font-bold">
+          {step.number}
+        </p>
+
+        <h3 className="text-2xl font-bold mt-2">
+          {step.title}
+        </h3>
+
+        <p className="text-gray-600 mt-3">
+          {step.fullDescription}
+        </p>
+
+      </div>
+
+    </div>
+
+  ))}
+
+</div>
+
           {/* Center Circle */}
 
           <motion.div
@@ -274,11 +305,8 @@ md:h-[850px]
             -translate-x-1/2
             -translate-y-1/2
 
-           w-[250px]
-h-[250px]
-
-md:w-[340px]
-md:h-[340px]
+            w-[340px]
+            h-[340px]
 
             rounded-full
             bg-white
@@ -299,19 +327,10 @@ md:h-[340px]
             <img
               src={logo}
               alt="Unicure"
-              className="
-w-12
-md:w-20
-mb-3
-"
+              className="w-20 mb-3"
             />
 
-            <h3 className="
-text-2xl
-md:text-4xl
-font-bold
-text-red-600
-">
+            <h3 className="text-4xl font-bold text-red-600">
               UNICURE
             </h3>
 
@@ -323,7 +342,7 @@ text-red-600
               Excellence
             </p>
 
-            <div className="mt-3 md:mt-6 space-y-1 md:space-y-2">
+            <div className="mt-6 space-y-2">
 
               <p className="font-semibold text-gray-800">
                 40+ Years Experience
