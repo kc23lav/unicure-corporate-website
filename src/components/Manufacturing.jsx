@@ -242,52 +242,6 @@ function Manufacturing() {
             ))}
           </motion.div>
 
-<div className="md:hidden space-y-6">
-
-  {processSteps.map((step, index) => (
-
-    <div
-      key={index}
-      className="
-      bg-white
-      rounded-3xl
-      overflow-hidden
-      shadow-xl
-      "
-    >
-
-      <img
-        src={step.image}
-        alt={step.title}
-        className="
-        w-full
-        h-48
-        object-cover
-        "
-      />
-
-      <div className="p-6">
-
-        <p className="text-red-600 font-bold">
-          {step.number}
-        </p>
-
-        <h3 className="text-2xl font-bold mt-2">
-          {step.title}
-        </h3>
-
-        <p className="text-gray-600 mt-3">
-          {step.fullDescription}
-        </p>
-
-      </div>
-
-    </div>
-
-  ))}
-
-</div>
-
           {/* Center Circle */}
 
           <motion.div
@@ -363,6 +317,52 @@ function Manufacturing() {
         </div>
 
       </div>
+
+<div className="md:hidden space-y-6">
+
+  {processSteps.map((step, index) => (
+
+    <div
+      key={index}
+      className="
+      bg-white
+      rounded-3xl
+      overflow-hidden
+      shadow-xl
+      "
+    >
+
+      <img
+        src={step.image}
+        alt={step.title}
+        className="
+        w-full
+        h-48
+        object-cover
+        "
+      />
+
+      <div className="p-6">
+
+        <p className="text-red-600 font-bold">
+          {step.number}
+        </p>
+
+        <h3 className="text-2xl font-bold mt-2">
+          {step.title}
+        </h3>
+
+        <p className="text-gray-600 mt-3">
+          {step.fullDescription}
+        </p>
+
+      </div>
+
+    </div>
+
+  ))}
+
+</div>
 
     </div>
   </section>
