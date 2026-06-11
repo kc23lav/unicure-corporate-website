@@ -101,7 +101,16 @@ function Manufacturing() {
 
       <div className="flex justify-center">
 
-        <div className="relative w-[850px] h-[850px]">
+        <div
+  className="
+  relative
+  w-[350px]
+  h-[350px]
+
+  md:w-[850px]
+  md:h-[850px]
+  "
+>
 
           {/* Orbit Ring */}
 
