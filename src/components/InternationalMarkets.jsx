@@ -164,11 +164,13 @@ function InternationalMarkets() {
   shadow-2xl
   overflow-hidden
   mx-auto
+
+  w-full
+  max-w-[700px]
+
+  h-[350px]
+  md:h-[490px]
   "
-  style={{
-    width: "700px",
-    height: "490px",
-  }}
 >
 
   <img
