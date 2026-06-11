@@ -66,6 +66,7 @@ const processSteps = [
 ];
 function Manufacturing() {
     const [selectedStep, setSelectedStep] = useState(null);
+    const isMobile = window.innerWidth < 768;
     return (
   <section
     id="manufacturing"
@@ -164,9 +165,14 @@ md:h-[850px]
                 }}
                 className="absolute"
                 style={{
-                  left: `calc(50% + ${step.x}px - 90px)`,
-                  top: `calc(50% + ${step.y}px - 120px)`,
-                }}
+  left: `calc(50% + ${
+    isMobile ? step.x * 0.55 : step.x
+  }px - 90px)`,
+
+  top: `calc(50% + ${
+    isMobile ? step.y * 0.55 : step.y
+  }px - 120px)`,
+}}
               >
                 {/* Connecting Line */}
 
