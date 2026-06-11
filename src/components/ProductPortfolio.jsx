@@ -167,22 +167,27 @@ const [searchTerm, setSearchTerm] = useState("");
     Product Portfolio
   </h2>
 
-  <p className="mt-5 text-lg text-gray-600 max-w-3xl mx-auto">
-    Diverse pharmaceutical formulations serving
-    healthcare needs across multiple therapeutic segments.
+  <p className="mt-5 text-lg text-gray-600 max-w-4xl mx-auto">
+    Diverse pharmaceutical formulations serving healthcare needs across multiple therapeutic segments.
   </p>
 
-  <a
-  href="/brochure/brochure.pdf"
+ <a
+  href="/brochure.pdf"
   download
   className="
+  inline-block
+  mt-8
+
   bg-red-600
   hover:bg-red-700
+
   text-white
   px-8
-  py-4
+  py-3
+
   rounded-xl
   font-semibold
+
   shadow-lg
   transition-all
   hover:scale-105
