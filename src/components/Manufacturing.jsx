@@ -166,11 +166,11 @@ md:h-[850px]
                 className="absolute"
                 style={{
   left: `calc(50% + ${
-    isMobile ? step.x * 0.55 : step.x
+    isMobile ? step.x * 0.7 : step.x
   }px - 90px)`,
 
   top: `calc(50% + ${
-    isMobile ? step.y * 0.55 : step.y
+    isMobile ? step.y * 0.7 : step.y
   }px - 120px)`,
 }}
               >
@@ -197,7 +197,7 @@ md:h-[850px]
                     )
                   }
                   className="
-                  w-44
+                  w-32 md:w-44
                   bg-white
                   rounded-3xl
                   shadow-xl
