@@ -104,8 +104,8 @@ function Manufacturing() {
         <div
   className="
   relative
-  w-[350px]
-  h-[350px]
+  w-[700px]
+  h-[700px]
 
   md:w-[850px]
   md:h-[850px]
