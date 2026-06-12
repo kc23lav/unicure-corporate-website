@@ -1,6 +1,9 @@
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.png";
 
 function Navbar() {
+const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-100">
 
@@ -56,9 +59,11 @@ function Navbar() {
 
         </ul>
 
-        <a
+       <a
   href="#contact"
   className="
+  hidden md:block
+
   bg-red-600
   hover:bg-red-700
 
@@ -74,15 +79,65 @@ function Navbar() {
   shadow-lg
   transition
   hover:scale-105
-
   whitespace-nowrap
   "
 >
   Request Partnership
 </a>
 
+<button
+  className="md:hidden text-red-700 text-2xl"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  {menuOpen ? <FaTimes /> : <FaBars />}
+</button>
+
       </div>
 
+{menuOpen && (
+  <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
+
+    <div className="flex flex-col p-6 gap-5">
+
+      <a href="#home" onClick={() => setMenuOpen(false)}>
+        Home
+      </a>
+
+      <a href="#manufacturing" onClick={() => setMenuOpen(false)}>
+        About
+      </a>
+
+      <a href="#facilities" onClick={() => setMenuOpen(false)}>
+        Facilities
+      </a>
+
+      <a href="#products" onClick={() => setMenuOpen(false)}>
+        Products
+      </a>
+
+      <a href="#contact" onClick={() => setMenuOpen(false)}>
+        Contact
+      </a>
+
+      <a
+        href="#contact"
+        onClick={() => setMenuOpen(false)}
+        className="
+        bg-red-600
+        text-white
+        text-center
+        py-3
+        rounded-xl
+        font-semibold
+        "
+      >
+        Request Partnership
+      </a>
+
+    </div>
+
+  </div>
+)}
     </nav>
   );
 }
