@@ -30,7 +30,7 @@ const products = [
   },
 
   {
-    image : antibiotics,
+    image: antibiotics,
     title: "Antibiotics & Anti-Fungal",
     desc: "Broad range of anti-infective formulations.",
     medicines: [
@@ -197,8 +197,8 @@ const products = [
       "Phenobarbitone Suspension/Tablets",
       "Sodium Valproate Tablets"
     ]
-  }
-];
+  },
+
   {
     image: cardio,
     title: "Cardiovascular Drugs",
@@ -252,7 +252,7 @@ const products = [
   },
 
   {
-    image: vet,
+    image: vets,
     title: "Veterinary Drugs",
     desc: "Products used for animals",
     medicines: [
@@ -265,11 +265,11 @@ const products = [
   },
 
    {
-    image: others,
+    image: other,
     title: "Other Exciting Range",
     desc: "Other medicines",
     medicines: [
-      Cyproheptadine + Tricholine Citrate Syrup",
+      "Cyproheptadine + Tricholine Citrate Syrup",
       "Mouth Saliva Drops",
       "Mycophenolate Mofetil Tablets",
       "Oral Rehydration Powders",
@@ -278,7 +278,7 @@ const products = [
     ]
   },
 
-  
+];  
 function ProductPortfolio() {
 const [selectedProduct, setSelectedProduct] = useState(null);
 const [searchTerm, setSearchTerm] = useState("");
