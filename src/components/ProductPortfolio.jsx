@@ -9,6 +9,12 @@ import cardio from "../assets/products/cardio.jpg";
 import diabetes from "../assets/products/diabetes.jpg";
 import disinfectant from "../assets/products/disinfectant.jpg";
 import cns from "../assets/products/cns.jpg";
+import cream from "../assets/products/cream.jpg";
+import cold from "../assets/products/cold.jpg";
+import gastro from "../assets/products/gastro.jpg";
+import allergy from "../assets/products/allergy.jpg";
+import vets from "../assets/products/vets.jpg";
+import other from "../assets/products/other.jpg";
 
 const products = [
   {
@@ -16,10 +22,10 @@ const products = [
     title: "Anti Malarial Drugs",
     desc: "Effective anti-malarial treatments.",
     medicines: [
-      "Artesunate + Sulphadoxine + Pyrimethamine",
-      "Chloroquine Phosphate",
-      "Primaquine Phosphate",
-      "Mefloquine"
+      "Artesunate + Sulphadoxine + Pyrimethamine Tablets",
+      "Chloroquine Phosphate Tablets",
+      "Primaquine Phosphate Tablets",
+      "Mefloquine Tablets"
     ]
   },
 
@@ -28,24 +34,24 @@ const products = [
     title: "Antibiotics & Anti-Fungal",
     desc: "Broad range of anti-infective formulations.",
     medicines: [
-      "Acyclovir",
-      "Amoxicillin",
+      "Acyclovir Tablets",
+      "Amoxicillin Capsules/Tablets/Dry Syrup",
       "Azithromycin Oral Suspension",
       "Azithromycin Tablets",
-      "Cefixime",
-      "Cefpodoxime",
-      "Cefpodoxime Proxetil",
-      "Cefuroxime Axetil",
+      "Cefixime Tablets",
+      "Cefpodoxime Capsules",
+      "Cefpodoxime Proxetil Oral Suspension",
+      "Cefuroxime Axetil Tablets",
       "Clotrimazole Vaginal Pessaries",
-      "Cloxacillin + Amoxicillin",
-      "Fluconazole",
-      "Itraconazole",
-      "Levofloxacin",
-      "Nitrofurantoin",
-      "Norfloxacin",
-      "Ofloxacin + Ornidazole",
+      "Cloxacillin + Amoxicillin Capsules",
+      "Fluconazole Tablets",
+      "Itraconazole Tablets",
+      "Levofloxacin Tablets",
+      "Nitrofurantoin Tablets",
+      "Norfloxacin Tablets",
+      "Ofloxacin + Ornidazole Tablets",
       "Povidone Iodine Vaginal Pessaries",
-      "Roxithromycin"
+      "Roxithromycin Tablets"
     ]
   },
 
@@ -54,15 +60,18 @@ const products = [
     title: "Nutritional Supplements",
     desc: "Health and wellness formulations.",
     medicines: [
-      "Biotin + Minerals",
-      "Calcium Pantothenate",
-      "Calcium + Cholecalciferol",
-      "Ferrous Ascorbate + Folic Acid",
-      "Lycopene Syrup",
-      "Multivitamins",
-      "Soya Isoflavones",
-      "Ubidecarenone Capsules",
-      "Vitamin A Solution"
+      "Biotin with Calcium Pantothenate, N-Acetyl Cysteine and Minerals Tablets",
+      "Calcium Pantothenate & Antioxidants Capsules",
+      "Calcium, Cholecalciferol & Minerals",
+      "Ferrous Ascorbate & Folic Acid Suspension",
+      "Ferrous Ascorbate & Folic Acid Tablets",
+      "Lycopene + Vitamins + Minerals Syrup",
+      "Multivitamins and Multi Minerals Tablets",
+      "Soya Isoflavones with Calcium, Magnesium and Vitamin D₃ Tablets",
+      "Ubidecarenone (100mg), Arginine, Alpha Tocopheryl Acetate and Selenium Capsules",
+      "Ubidecarenone (Coenzyme Q10) USP Capsules",
+      "Vitamin A Solution",
+      "Premix of Vitamin / Mineral for Flour Fortification"
     ]
   },
 
@@ -72,62 +81,101 @@ const products = [
     desc: "Specialized hormonal formulations.",
     medicines: [
       "21 Day OCP Kit",
-      "Allylestrenol",
-      "Danazol",
-      "Levonorgestrel",
-      "Medroxy Progesterone",
-      "Micronized Progesterone",
-      "Norethisterone",
-      "Ulipristal"
+      "Allylestrenol Tablets",
+      "Danazol Capsules",
+      "Levonorgestrel Tablets(For Contraception)",
+      "Medroxy Progesterone Tablets",
+      "Micronized Progesterone Tablets",
+      "Norethisterone Tablets",
+      "Ulipristal Tablets"
     ]
   },
 
   {
-    image: cardio,
-    title: "Cardiovascular Drugs",
-    desc: "Products supporting heart health.",
+    image: cream,
+    title: "Creams and Ointments",
+    desc: "Creams and ointments for skina dn other related problems",
     medicines: [
-      "Isosorbide Dinitrate",
-      "Atenolol",
-      "Amlodipine",
-      "Atenolol + Amlodipine",
-      "Enalapril",
-      "Captopril",
-      "Atorvastatin",
-      "Diltiazem",
-      "Verapamil",
-      "Simvastatin",
-      "Losartan",
-      "Metoprolol",
-      "Clopidogrel",
-      "Aspirin"
-    ]
-  },
+    "Beclometasone Dipropionate and Clotrimazole and Neomycin Sulphate Cream",
+    "Beclometasone Dipropionate and Clotrimazole Cream",
+    "Benzoyl Peroxide Cream",
+    "Betamethasone Cream",
+    "Ciclopirox Olamine Cream",
+    "Clindamycin Phosphate and Adapalene Cream",
+    "Clindamycin Phosphate and Nicotinamide Cream",
+    "Clobetasol Propionate, Miconazole Nitrate and Gentamicin Sulphate Cream",
+    "Clobetasol Propionate, Miconazole Nitrate and Neomycin Sulphate Cream",
+    "Clotrimazole Cream",
+    "Fusidic Acid Cream",
+    "Hydrocortisone Acetate Cream",
+    "Hydroquinone, Tretinoin & Mometasone Furoate Cream",
+    "Ketoconazole Cream / Shampoo ",
+    "Metronidazole Gel",
+    "Mupirocin Ointment",
+    "Neomycin Cream",
+    "Neomycin, Polymyxin, Bacitracin Cream",
+    "Povidone Iodine Ointment",
+    "Silver Sulphadiazine Cream"  
+  ]
+},
 
-  {
-    image: diabetes,
-    title: "Diabetes Care",
-    desc: "Products supporting diabetes management.",
+ {
+    image: cold,
+    title: "Analgesics,Anti-Cough & Cold",
+    desc: "Products help during cold and coughs",
     medicines: [
-      "Acarbose",
-      "Glibenclamide",
-      "Gliclazide",
-      "Glipizide",
-      "Metformin + Gliclazide",
-      "Metformin",
-      "Metformin + Glimepiride"
+    "Ambroxol Hydrochloride & Cetirizine Hydrochloride Tablets",
+    "Ambroxol Hydrochloride, Salbutamol, Guaifenesin and Racementhol Expectorant",
+    "Aspirin Tablets",
+    "Dextromethorphan Hydrobromide, Phenylephrine Hydrochloride and Chlorpenamine Maleate Syrup",
+     "Diclofenac Diethylamine + Linseed Oil + Menthol Gel",
+     "Diclofenac Diethylamine Gel",
+     "Diclofenac Sodium Tablets",
+     "Ibuprofen Tablets / Suspension",
+     "Mefenamic Acid Tablets",
+     "Paracetamol, Phenylephrine Hydrochloride & Chlorpheniramine Maleate Liquid",
+     "Paracetamol + Diclofenac Tablets",
+     "Paracetamol and Ibuprofen Tablets / Suspension",
+     "Paracetamol Drops",
+     "Paracetamol Effervescent Tablets",
+     "Paracetamol Phenylephrine Hydrochloride, Chlorpheniramine Maleate and Caffeine Tablets",
+     "Paracetamol Tablets / Syrup",
+     "Paracetamol, Phenylephrine Hydrochloride and Chlorpheniramine Maleate Tablets",
+     "Paracetamol, Phenylpropanolamine Hydrochloride, Dextromethorphan Hydrobromide & Cetirizine Tablets",
+     "Paracetamol, Phenylpropanolamine, Dextromethorphan Hydrobromide & Cetirizine Suspension",
+     "Tramadol Tablets"  
+  ]
+},
+   {
+    image: gastro,
+    title: "Gastro Related Drugs",
+    desc: "Gastric control solutions",
+    medicines: [
+      "Aluminium Hydroxide + Magnesium Hydroxide Tablets / Suspension",
+      "Aluminium Hydroxide Tablets",
+      "Chloroxylenol Solution",
+      "Domperidone Tablets / Suspension",
+      "Ivermectin + Albendazole Syrup / Tablets",
+      "Mebendazole Capsules",
+      "Omeprazole Capsules",
+      "Pantoprazole + Domperidone Tablets",
+      "Pantoprazole Tablets",
+      "Ranitidine Tablets",
+      "Tinidazole, Diloxanide Furoate, Dimeticone & Homatropine Methylbromide Tablets",
+      "Tinidazole, Diloxanide & Simethicone Suspension",
+      "Glycerin Enema"
     ]
   },
 
-  {
+   {
     image: disinfectant,
     title: "Disinfectants",
     desc: "Hygiene and infection control solutions.",
     medicines: [
       "Benzyl Benzoate Solution",
-      "Chlorhexidine + Cetrimide",
+      "Chlorhexidine + Cetrimide Solution",
       "Chloroxylenol Solution",
-      "Lysol",
+      "Lysol (Cresol+soap solution)",
       "Povidone Iodine Scrub",
       "Povidone Iodine Solution",
       "Strong Cetrimide Solution"
@@ -139,18 +187,98 @@ const products = [
     title: "CNS Drugs",
     desc: "Central nervous system treatments.",
     medicines: [
-      "Alprazolam",
-      "Bromocriptine",
-      "Chlordiazepoxide",
-      "Diazepam",
-      "Fluoxetine",
-      "Imipramine",
-      "Olanzapine",
-      "Phenobarbitone",
-      "Sodium Valproate"
+      "Alprazolam Tablets",
+      "Bromocriptine Tablets",
+      "Chlordiazepoxide Tablets",
+      "Diazepam Tablets",
+      "Fluoxetine Tablets",
+      "Imipramine Tablets",
+      "Olanzapine Tablets",
+      "Phenobarbitone Suspension/Tablets",
+      "Sodium Valproate Tablets"
     ]
   }
 ];
+  {
+    image: cardio,
+    title: "Cardiovascular Drugs",
+    desc: "Products supporting heart health.",
+    medicines: [
+      "Isosorbide Dinitrate Tablets",
+      "Atenolol Tablets",
+      "Amlodipine Tablets",
+      "Atenolol + Amlodipine Tablets",
+      "Enalapril Maleate Tablets",
+      "Captopril Tablets",
+      "Atorvastatin Tablets",
+      "Diltiazem Hydrochloride Tablets",
+      "Verapamil Tablets",
+      "Simvastatin Tablets",
+      "Losartan Potassium Tablets",
+      "Metoprolol Tablets",
+      "Clopidogrel Tablets",
+      "Aspirin Tablets"
+    ]
+  },
+
+  {
+    image: diabetes,
+    title: "Diabetes Care",
+    desc: "Products supporting diabetes management.",
+    medicines: [
+      "Acarbose Tablets",
+      "Glibenclamide Tablets",
+      "Gliclazide Tablets",
+      "Glipizide Tablets",
+      "Metformin + Gliclazide Tablets",
+      "Metformin Tablets",
+      "Metformin + Glimepiride Tablets"
+    ]
+  },
+  
+   {
+    image: allergy,
+    title: "Anti Allergy and Anti Emetic Drugs",
+    desc: "Products supporting during allergies.",
+    medicines: [
+      "Cetirizine Tablets / Suspension",
+      "Doxylamine + Pyridoxine Tablets",
+      "Fexofenadine Tablets",
+      "Metoclopramide Tablets",
+      "Montelukast Tablets",
+      "Ondansetron Mouth Dissolving Tablets",
+      "Promethazine Tablets / Suspension"
+    ]
+  },
+
+  {
+    image: vet,
+    title: "Veterinary Drugs",
+    desc: "Products used for animals",
+    medicines: [
+      "Benzyl Benzoate Lotion",
+      "Fenbendazole Bolus",
+      "Multimineral, Multivitamin Feed",
+      "Oxytetracycline Bolus",
+      "Sulphadimidine Bolus"
+    ]
+  },
+
+   {
+    image: others,
+    title: "Other Exciting Range",
+    desc: "Other medicines",
+    medicines: [
+      Cyproheptadine + Tricholine Citrate Syrup",
+      "Mouth Saliva Drops",
+      "Mycophenolate Mofetil Tablets",
+      "Oral Rehydration Powders",
+      "Sildenafil Citrate Tablets",
+      "Tadalafil Tablets"
+    ]
+  },
+
+  
 function ProductPortfolio() {
 const [selectedProduct, setSelectedProduct] = useState(null);
 const [searchTerm, setSearchTerm] = useState("");

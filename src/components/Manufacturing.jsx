@@ -414,6 +414,7 @@ function Manufacturing() {
   ))}
 
 </div>
+
     </div>
   </section>
 );
